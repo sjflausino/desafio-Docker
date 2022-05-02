@@ -1,0 +1,21 @@
+version: "3.3"
+services:
+  front:
+    image: front/app-node
+    container_name: front
+    networks:
+      - compose-bridge
+    ports:
+      - 8080:8080
+
+  back:
+    image: back/app-node
+    container_name: back
+    networks:
+      - compose-bridge
+    ports:
+      - 3000:3000
+
+networks:
+  compose-bridge:
+    driver: bridge
