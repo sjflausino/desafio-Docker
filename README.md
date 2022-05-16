@@ -15,9 +15,9 @@ ENTRYPOINT npx http-server
 Esse dockerfile ficará responsável por criar a imagem que utilizaremos no frontend e estamos mapeando para a porta 8080 do container
 
 no mesmo diretorio abriremos o terminal e utilizaremos o comando
-
+```
 docker build -t front/app-node:1.0 .
-
+```
 para criar a imagem copiando os arquivos locais para a imagem do front.
 
 ### Backend
@@ -36,9 +36,9 @@ ENTRYPOINT node index.js
 Esse dockerfile ficará responsável por criar a imagem que utilizaremos no backend e estamos mapeando para a porta 3000 do container
 
 no mesmo diretorio abriremos o terminal e utilizaremos o comando
-
+```
 docker build -t back/app-node:1.0 .
-
+```
 para criar a imagem também copiando os arquivos do diretorio atual pra dentro da imagem do back.
 
 ### Docker
