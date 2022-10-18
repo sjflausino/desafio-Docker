@@ -1,7 +1,7 @@
 version: "3.3"
 services:
   front:
-    image: front/app-node
+    image: front/app-node:1.0
     container_name: front
     networks:
       - compose-bridge
@@ -9,7 +9,7 @@ services:
       - 8080:8080
 
   back:
-    image: back/app-node
+    image: back/app-node:1.0
     container_name: back
     networks:
       - compose-bridge
